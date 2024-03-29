@@ -105,7 +105,7 @@ Admin Paneli üzerinden sefer oluşturma ,otobüs ekleme ,yolcu bilgileri ve öd
 ### Diğer Sayfa Detayları
 
 
-#### Hakkımzıda Sayfası
+#### Hakkımızda Sayfası
 
 
 ![Hakkımızda Sayfası](https://github.com/aysegulcaglayan/bus-booking-web-application/assets/89272211/1203fc9d-78fb-4d08-9f21-ac4a32a096df)
