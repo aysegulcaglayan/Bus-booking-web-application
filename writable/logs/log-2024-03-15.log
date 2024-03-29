@@ -1,0 +1,483 @@
+ERROR - 2024-03-15 10:43:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES ('','xxxx','xxxx','123...' at line 1 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO sof...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO sof...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO sof...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_bus.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO sof...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-15 10:43:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES ('','xxxx','xxxx','123...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_bus.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler (sofor_id,sofor_isim,\'sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES (\'\',\'xxxx\',\'xxxx\',\'12369874587\',\'14785236978\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 10:43:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES ('','xxxx','xxxx','123...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler (sofor_id,sofor_isim,\'sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES (\'\',\'xxxx\',\'xxxx\',\'12369874587\',\'14785236978\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler (sofor_id,sofor_isim,\'sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES (\'\',\'xxxx\',\'xxxx\',\'12369874587\',\'14785236978\')')
+ 3 APPPATH\Controllers\admin_bus.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler (sofor_id,sofor_isim,\'sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES (\'\',\'xxxx\',\'xxxx\',\'12369874587\',\'14785236978\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 10:43:55 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES ('','xxxx','xxxx','123...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO soforler (sofor_id,sofor_isim,\'sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES (\'\',\'xxxx\',\'xxxx\',\'12369874587\',\'14785236978\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler (sofor_id,sofor_isim,\'sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES (\'\',\'xxxx\',\'xxxx\',\'12369874587\',\'14785236978\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler (sofor_id,sofor_isim,\'sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES (\'\',\'xxxx\',\'xxxx\',\'12369874587\',\'14785236978\')')
+ 4 APPPATH\Controllers\admin_bus.php(47): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler (sofor_id,sofor_isim,\'sofor_soyisim,sofor_tc,sofor_tel)
+            VALUES (\'\',\'xxxx\',\'xxxx\',\'12369874587\',\'14785236978\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-15 12:40:18 --> mysqli_sql_exception: Unknown column 'sehir_adi' in 'where clause' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_route.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_route->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-15 12:40:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sehir_adi' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_route.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:40:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sehir_adi' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 3 APPPATH\Controllers\admin_route.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:40:18 --> [Caused by] mysqli_sql_exception: Unknown column 'sehir_adi' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 4 APPPATH\Controllers\admin_route.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-15 12:52:33 --> mysqli_sql_exception: Unknown column 'sehir_adi' in 'where clause' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_route.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_route->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-15 12:52:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sehir_adi' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_route.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:52:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sehir_adi' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 3 APPPATH\Controllers\admin_route.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:52:33 --> [Caused by] mysqli_sql_exception: Unknown column 'sehir_adi' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 4 APPPATH\Controllers\admin_route.php(29): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `şehiler` WHERE sehir_adi=\'Kocaeli\'')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:53:33 --> ErrorException: Undefined variable $vzaman
+in APPPATH\Controllers\admin_route.php on line 45.
+ 1 APPPATH\Controllers\admin_route.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vzaman', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\admin_route.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-15 12:56:52 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO sef...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO sef...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO sef...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_route.php(44): CodeIgniter\Database\BaseConnection->query('INSERT INTO sef...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_route->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-15 12:56:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_route.php(44): CodeIgniter\Database\BaseConnection->query('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'1\',\'3 \',07.00,19.00,12,\'3 \',\'1000\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:56:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'1\',\'3 \',07.00,19.00,12,\'3 \',\'1000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'1\',\'3 \',07.00,19.00,12,\'3 \',\'1000\')')
+ 3 APPPATH\Controllers\admin_route.php(44): CodeIgniter\Database\BaseConnection->query('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'1\',\'3 \',07.00,19.00,12,\'3 \',\'1000\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 12:56:52 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'1\',\'3 \',07.00,19.00,12,\'3 \',\'1000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'1\',\'3 \',07.00,19.00,12,\'3 \',\'1000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'1\',\'3 \',07.00,19.00,12,\'3 \',\'1000\')')
+ 4 APPPATH\Controllers\admin_route.php(44): CodeIgniter\Database\BaseConnection->query('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'1\',\'3 \',07.00,19.00,12,\'3 \',\'1000\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-15 13:17:30 --> mysqli_sql_exception: Unknown column 'kalkis_zamani' in 'field list' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO sef...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO sef...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO sef...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_route.php(45): CodeIgniter\Database\BaseConnection->query('INSERT INTO sef...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_route->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-15 13:17:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kalkis_zamani' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_route.php(45): CodeIgniter\Database\BaseConnection->query('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_tarihi,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'3\',\'1 \',\'12/03/2024\',07.00,18.00,11,\'3 \',\'1000\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:17:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kalkis_zamani' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_tarihi,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'3\',\'1 \',\'12/03/2024\',07.00,18.00,11,\'3 \',\'1000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_tarihi,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'3\',\'1 \',\'12/03/2024\',07.00,18.00,11,\'3 \',\'1000\')')
+ 3 APPPATH\Controllers\admin_route.php(45): CodeIgniter\Database\BaseConnection->query('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_tarihi,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'3\',\'1 \',\'12/03/2024\',07.00,18.00,11,\'3 \',\'1000\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:17:30 --> [Caused by] mysqli_sql_exception: Unknown column 'kalkis_zamani' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_tarihi,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'3\',\'1 \',\'12/03/2024\',07.00,18.00,11,\'3 \',\'1000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_tarihi,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'3\',\'1 \',\'12/03/2024\',07.00,18.00,11,\'3 \',\'1000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_tarihi,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'3\',\'1 \',\'12/03/2024\',07.00,18.00,11,\'3 \',\'1000\')')
+ 4 APPPATH\Controllers\admin_route.php(45): CodeIgniter\Database\BaseConnection->query('INSERT INTO seferler(sefer_id,kalkis_sehir_id,varis_sehir_id,kalkis_tarihi,kalkis_zamani,varis_zamani,yolculuk_suresi,otobüs_id,ücret)
+                VALUES (\'\', \'3\',\'1 \',\'12/03/2024\',07.00,18.00,11,\'3 \',\'1000\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:35:58 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:36:25 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:36:27 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:36:31 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:36:34 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:36:35 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:36:35 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:36:35 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:36:41 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:40:39 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:41:48 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:44:09 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:44:10 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 113.
+ 1 APPPATH\Controllers\Ticketpage.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 113)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:45:30 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 107.
+ 1 APPPATH\Controllers\Ticketpage.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 107)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:51:15 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 109.
+ 1 APPPATH\Controllers\Ticketpage.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 109)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 13:53:14 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 109.
+ 1 APPPATH\Controllers\Ticketpage.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 109)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 22:25:59 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 107.
+ 1 APPPATH\Controllers\Ticketpage.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 107)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 22:28:40 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\Ticketpage.php on line 102.
+ 1 APPPATH\Controllers\Ticketpage.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 102)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 22:31:51 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\seat.php on line 64.
+ 1 APPPATH\Controllers\seat.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 64)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 22:34:47 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\seat.php on line 64.
+ 1 APPPATH\Controllers\seat.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 64)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 22:41:15 --> ErrorException: Undefined variable $kalkisNoktasi
+in APPPATH\Controllers\Ticketpage.php on line 10.
+ 1 APPPATH\Controllers\Ticketpage.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kalkisNoktasi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Ticketpage->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketpage))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 22:42:38 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\Ticketpage.php on line 102.
+ 1 APPPATH\Controllers\Ticketpage.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 102)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 22:43:10 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\seat.php on line 56.
+ 1 APPPATH\Controllers\seat.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 56)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 23:02:05 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 10.
+ 1 APPPATH\Controllers\seat.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-15 23:04:14 --> ErrorException: Undefined variable $gidisTarihi
+in APPPATH\Controllers\seat.php on line 17.
+ 1 APPPATH\Controllers\seat.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidisTarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

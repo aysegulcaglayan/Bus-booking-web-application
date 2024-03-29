@@ -1,0 +1,52 @@
+CRITICAL - 2024-03-21 20:48:06 --> ErrorException: Undefined variable $user_data
+in APPPATH\Controllers\info.php on line 82.
+ 1 APPPATH\Controllers\info.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 82)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 23:37:43 --> ErrorException: require_once(vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\bilet.php on line 9.
+ 1 APPPATH\Controllers\bilet.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\bilet.php', 9)
+ 2 APPPATH\Controllers\bilet.php(9): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\bilet->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\bilet))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 23:37:56 --> Error: Class "Stripe\Stripe" not found
+in APPPATH\Controllers\bilet.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\bilet->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\bilet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 23:38:07 --> Error: Class "Stripe\Charge" not found
+in APPPATH\Controllers\bilet.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\bilet->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\bilet))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 23:38:27 --> ErrorException: Undefined variable $charge
+in APPPATH\Controllers\bilet.php on line 17.
+ 1 APPPATH\Controllers\bilet.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $charge', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\bilet.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\bilet->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\bilet))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 23:44:00 --> ErrorException: Undefined array key "card_number"
+in APPPATH\Controllers\bilet.php on line 10.
+ 1 APPPATH\Controllers\bilet.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "card_number"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\bilet.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\bilet->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\bilet))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-21 23:54:41 --> ErrorException: Undefined array key "no"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,623 @@
+CRITICAL - 2024-03-23 00:02:31 --> ErrorException: Undefined array key "indirimOrani"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 00:03:30 --> ErrorException: Undefined array key "indirimOrani"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 00:04:20 --> ErrorException: Undefined array key "indirimOrani"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:16:02 --> ErrorException: Undefined variable $tur
+in APPPATH\Controllers\info.php on line 206.
+ 1 APPPATH\Controllers\info.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tur', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 206)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:16:30 --> ErrorException: Undefined array key "tur"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tur"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:23:51 --> Error: Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\info.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-23 12:25:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''koltuklar' WHERE koltukNumarasi='100'' at line 1 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 'indirim...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 'indirim...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 'indirim...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\info.php(11): CodeIgniter\Database\BaseConnection->query('SELECT 'indirim...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\info->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-23 12:25:13 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''koltuklar' WHERE koltukNumarasi='100'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\info.php(11): CodeIgniter\Database\BaseConnection->query('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=\'100\' ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:25:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''koltuklar' WHERE koltukNumarasi='100'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=\'100\' ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=\'100\' ')
+ 3 APPPATH\Controllers\info.php(11): CodeIgniter\Database\BaseConnection->query('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=\'100\' ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:25:13 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''koltuklar' WHERE koltukNumarasi='100'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=\'100\' ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=\'100\' ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=\'100\' ')
+ 4 APPPATH\Controllers\info.php(11): CodeIgniter\Database\BaseConnection->query('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=\'100\' ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-23 12:25:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''koltuklar' WHERE koltukNumarasi=100' at line 1 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 'indirim...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 'indirim...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 'indirim...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\info.php(11): CodeIgniter\Database\BaseConnection->query('SELECT 'indirim...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\info->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-23 12:25:40 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''koltuklar' WHERE koltukNumarasi=100' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\info.php(11): CodeIgniter\Database\BaseConnection->query('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=100 ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:25:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''koltuklar' WHERE koltukNumarasi=100' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=100 ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=100 ')
+ 3 APPPATH\Controllers\info.php(11): CodeIgniter\Database\BaseConnection->query('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=100 ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:25:40 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''koltuklar' WHERE koltukNumarasi=100' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=100 ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=100 ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=100 ')
+ 4 APPPATH\Controllers\info.php(11): CodeIgniter\Database\BaseConnection->query('SELECT \'indirim_orani\' FROM  \'koltuklar\' WHERE koltukNumarasi=100 ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:31:51 --> ErrorException: Undefined array key "indirimOrani"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:35:00 --> ErrorException: Undefined variable $indirimMesaji
+in APPPATH\Controllers\info.php on line 207.
+ 1 APPPATH\Controllers\info.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $indirimMesaji', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 207)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 12:35:20 --> ErrorException: Undefined variable $indirimOrani
+in APPPATH\Controllers\info.php on line 207.
+ 1 APPPATH\Controllers\info.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $indirimOrani', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 207)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 13:02:45 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\yolcu.php on line 15.
+ 1 APPPATH\Controllers\yolcu.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\yolcu.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\yolcu->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\yolcu))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 13:29:35 --> ErrorException: Undefined array key "isim"
+in APPPATH\Controllers\info.php on line 12.
+ 1 APPPATH\Controllers\info.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isim"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-23 14:08:36 --> mysqli_sql_exception: Unknown column 'rezerve' in 'field list' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kol...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kol...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kol...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(103): CodeIgniter\Database\BaseConnection->query('INSERT INTO kol...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-23 14:08:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rezerve' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat2.php(103): CodeIgniter\Database\BaseConnection->query('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'6\',\'2\',rezerve,\'57\',\'15\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:08:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rezerve' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'6\',\'2\',rezerve,\'57\',\'15\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'6\',\'2\',rezerve,\'57\',\'15\')')
+ 3 APPPATH\Controllers\seat2.php(103): CodeIgniter\Database\BaseConnection->query('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'6\',\'2\',rezerve,\'57\',\'15\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:08:36 --> [Caused by] mysqli_sql_exception: Unknown column 'rezerve' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'6\',\'2\',rezerve,\'57\',\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'6\',\'2\',rezerve,\'57\',\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'6\',\'2\',rezerve,\'57\',\'15\')')
+ 4 APPPATH\Controllers\seat2.php(103): CodeIgniter\Database\BaseConnection->query('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'6\',\'2\',rezerve,\'57\',\'15\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:15:11 --> ErrorException: Undefined variable $tc
+in APPPATH\Controllers\seat2.php on line 89.
+ 1 APPPATH\Controllers\seat2.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tc', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 89)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat2')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat2')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat2', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:17:24 --> ErrorException: Undefined variable $tc2
+in APPPATH\Controllers\seat2.php on line 89.
+ 1 APPPATH\Controllers\seat2.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tc2', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 89)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat2')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat2')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat2', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:17:52 --> ErrorException: Undefined variable $user_id2
+in APPPATH\Controllers\seat2.php on line 93.
+ 1 APPPATH\Controllers\seat2.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id2', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 93)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat2')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat2')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat2', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:18:11 --> ErrorException: Undefined variable $koltukno2
+in APPPATH\Controllers\seat2.php on line 93.
+ 1 APPPATH\Controllers\seat2.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $koltukno2', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 93)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat2')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat2')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat2', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:18:12 --> ErrorException: Undefined variable $koltukno2
+in APPPATH\Controllers\seat2.php on line 93.
+ 1 APPPATH\Controllers\seat2.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $koltukno2', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 93)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat2')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat2')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat2', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:18:24 --> ErrorException: Undefined variable $rezerve
+in APPPATH\Controllers\seat2.php on line 93.
+ 1 APPPATH\Controllers\seat2.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rezerve', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 93)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat2')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat2')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat2', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:20:57 --> ErrorException: Undefined variable $user_id
+in APPPATH\Controllers\seat2.php on line 90.
+ 1 APPPATH\Controllers\seat2.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 90)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat2')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat2')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat2', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:23:32 --> ErrorException: Undefined variable $tc
+in APPPATH\Controllers\seat2.php on line 65.
+ 1 APPPATH\Controllers\seat2.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tc', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:24:19 --> ErrorException: Undefined variable $tc
+in APPPATH\Controllers\seat2.php on line 49.
+ 1 APPPATH\Controllers\seat2.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tc', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:24:40 --> ErrorException: Undefined variable $tc
+in APPPATH\Controllers\seat2.php on line 49.
+ 1 APPPATH\Controllers\seat2.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tc', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:26:15 --> ErrorException: Undefined variable $tc
+in APPPATH\Controllers\seat2.php on line 46.
+ 1 APPPATH\Controllers\seat2.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tc', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:26:41 --> ErrorException: Undefined variable $tc
+in APPPATH\Controllers\seat2.php on line 46.
+ 1 APPPATH\Controllers\seat2.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tc', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:33:56 --> ErrorException: Undefined variable $rezerve
+in APPPATH\Controllers\seat2.php on line 73.
+ 1 APPPATH\Controllers\seat2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rezerve', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-23 14:41:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`)) in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rez...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rez...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rez...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(59): CodeIgniter\Database\BaseConnection->query('INSERT INTO rez...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-23 14:41:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat2.php(59): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'101\',\'2024-03-23 14:41:45\',\'rezerve\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:41:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'101\',\'2024-03-23 14:41:45\',\'rezerve\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'101\',\'2024-03-23 14:41:45\',\'rezerve\')')
+ 3 APPPATH\Controllers\seat2.php(59): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'101\',\'2024-03-23 14:41:45\',\'rezerve\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 14:41:45 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'101\',\'2024-03-23 14:41:45\',\'rezerve\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'101\',\'2024-03-23 14:41:45\',\'rezerve\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'101\',\'2024-03-23 14:41:45\',\'rezerve\')')
+ 4 APPPATH\Controllers\seat2.php(59): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'101\',\'2024-03-23 14:41:45\',\'rezerve\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-23 14:57:22 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`)) in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rez...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rez...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rez...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO rez...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-03-23 14:57:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`)) in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rez...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rez...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rez...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(61): CodeIgniter\Database\BaseConnection->query('INSERT INTO rez...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-03-23 15:02:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`)) in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rez...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rez...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rez...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rez...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-23 15:02:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'105\',\'2024-03-23 15:02:54\',\'rezerve\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:02:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'105\',\'2024-03-23 15:02:54\',\'rezerve\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'105\',\'2024-03-23 15:02:54\',\'rezerve\')')
+ 3 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'105\',\'2024-03-23 15:02:54\',\'rezerve\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:02:54 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'105\',\'2024-03-23 15:02:54\',\'rezerve\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'105\',\'2024-03-23 15:02:54\',\'rezerve\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'105\',\'2024-03-23 15:02:54\',\'rezerve\')')
+ 4 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'105\',\'2024-03-23 15:02:54\',\'rezerve\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-23 15:03:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`)) in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rez...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rez...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rez...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rez...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-23 15:03:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:19\',\'rezerve\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:03:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:19\',\'rezerve\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:19\',\'rezerve\')')
+ 3 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:19\',\'rezerve\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:03:19 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:19\',\'rezerve\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:19\',\'rezerve\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:19\',\'rezerve\')')
+ 4 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:19\',\'rezerve\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-23 15:03:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`)) in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rez...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rez...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rez...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rez...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-23 15:03:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:32\',\'rezerve\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:03:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:32\',\'rezerve\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:32\',\'rezerve\')')
+ 3 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:32\',\'rezerve\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:03:32 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:32\',\'rezerve\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:32\',\'rezerve\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:32\',\'rezerve\')')
+ 4 APPPATH\Controllers\seat2.php(60): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'57\',\'2024-03-23 15:03:32\',\'rezerve\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:10:33 --> ErrorException: Undefined variable $koltukekle
+in APPPATH\Controllers\seat2.php on line 76.
+ 1 APPPATH\Controllers\seat2.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $koltukekle', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:10:53 --> ParseError: Unmatched '}'
+in APPPATH\Controllers\seat2.php on line 79.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat2')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat2')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat2', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-23 15:13:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`)) in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rez...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rez...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rez...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(67): CodeIgniter\Database\BaseConnection->query('INSERT INTO rez...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-23 15:13:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat2.php(67): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'109\',\'2024-03-23 15:13:23\',\'rezerve\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:13:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'109\',\'2024-03-23 15:13:23\',\'rezerve\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'109\',\'2024-03-23 15:13:23\',\'rezerve\')')
+ 3 APPPATH\Controllers\seat2.php(67): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'109\',\'2024-03-23 15:13:23\',\'rezerve\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:13:23 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`rezervasyonlar`, CONSTRAINT `fk_Rezervasyonlar_Koltuklar1` FOREIGN KEY (`koltuk_id`) REFERENCES `koltuklar` (`koltuk_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'109\',\'2024-03-23 15:13:23\',\'rezerve\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'109\',\'2024-03-23 15:13:23\',\'rezerve\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'109\',\'2024-03-23 15:13:23\',\'rezerve\')')
+ 4 APPPATH\Controllers\seat2.php(67): CodeIgniter\Database\BaseConnection->query('INSERT INTO rezervasyonlar (rezervasyon_id,user_id,sefer_id,koltuk_id,rezervasyon_tarihi,rezervasyon_durumu) VALUES
+                                          (\'\',\'2\',\'6\',\'109\',\'2024-03-23 15:13:23\',\'rezerve\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:40:25 --> ErrorException: ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\xampp\\htdocs\\yazlab3\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\xampp\\htdocs\\yazlab3\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(982): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1068): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:53:46 --> ErrorException: Undefined property: App\Controllers\seat2::$load
+in APPPATH\Controllers\seat2.php on line 36.
+ 1 APPPATH\Controllers\seat2.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\seat2::$load', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:57:28 --> Error: Cannot call constructor
+in APPPATH\Controllers\seat2.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\seat2->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 15:58:03 --> ErrorException: Undefined variable $indirimOrani
+in APPPATH\Controllers\info.php on line 9.
+ 1 APPPATH\Controllers\info.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $indirimOrani', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

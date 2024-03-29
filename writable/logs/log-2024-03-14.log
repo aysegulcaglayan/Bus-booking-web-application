@@ -1,0 +1,907 @@
+CRITICAL - 2024-03-14 09:25:49 --> ErrorException: Undefined property: App\Controllers\SignUp::$load
+in APPPATH\Controllers\SignUp.php on line 10.
+ 1 APPPATH\Controllers\SignUp.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SignUp::$load', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\SignUp.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\SignUp->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 09:26:52 --> ErrorException: Undefined property: App\Controllers\SignUp::$load
+in APPPATH\Controllers\SignUp.php on line 10.
+ 1 APPPATH\Controllers\SignUp.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SignUp::$load', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\SignUp.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\SignUp->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignUp))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 09:45:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com,12345678910,kadın,21,123456789,öğrenci,2)' at line 2 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\connection->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 09:45:12 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com,12345678910,kadın,21,123456789,öğrenci,2)' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kullanıcılar`(`kullanici_id`, `isim`, `soyisim`, `kullanıcı_Adı`, `tc_kimlik`, `e_mail`, `telefon_numarası`, `cinsiyet`, `yaş`, `şifre`, `müşteri_mesleği`, `bakiye`)
+        VALUES(2,ayşegül,çağlayan,ayse,12345678910,ayse@gmail.com,12345678910,kadın,21,123456789,öğrenci,2) ')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 09:45:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com,12345678910,kadın,21,123456789,öğrenci,2)' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kullanıcılar`(`kullanici_id`, `isim`, `soyisim`, `kullanıcı_Adı`, `tc_kimlik`, `e_mail`, `telefon_numarası`, `cinsiyet`, `yaş`, `şifre`, `müşteri_mesleği`, `bakiye`)
+        VALUES(2,ayşegül,çağlayan,ayse,12345678910,ayse@gmail.com,12345678910,kadın,21,123456789,öğrenci,2) ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kullanıcılar`(`kullanici_id`, `isim`, `soyisim`, `kullanıcı_Adı`, `tc_kimlik`, `e_mail`, `telefon_numarası`, `cinsiyet`, `yaş`, `şifre`, `müşteri_mesleği`, `bakiye`)
+        VALUES(2,ayşegül,çağlayan,ayse,12345678910,ayse@gmail.com,12345678910,kadın,21,123456789,öğrenci,2) ')
+ 3 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kullanıcılar`(`kullanici_id`, `isim`, `soyisim`, `kullanıcı_Adı`, `tc_kimlik`, `e_mail`, `telefon_numarası`, `cinsiyet`, `yaş`, `şifre`, `müşteri_mesleği`, `bakiye`)
+        VALUES(2,ayşegül,çağlayan,ayse,12345678910,ayse@gmail.com,12345678910,kadın,21,123456789,öğrenci,2) ')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 09:45:12 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com,12345678910,kadın,21,123456789,öğrenci,2)' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kullanıcılar`(`kullanici_id`, `isim`, `soyisim`, `kullanıcı_Adı`, `tc_kimlik`, `e_mail`, `telefon_numarası`, `cinsiyet`, `yaş`, `şifre`, `müşteri_mesleği`, `bakiye`)
+        VALUES(2,ayşegül,çağlayan,ayse,12345678910,ayse@gmail.com,12345678910,kadın,21,123456789,öğrenci,2) ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kullanıcılar`(`kullanici_id`, `isim`, `soyisim`, `kullanıcı_Adı`, `tc_kimlik`, `e_mail`, `telefon_numarası`, `cinsiyet`, `yaş`, `şifre`, `müşteri_mesleği`, `bakiye`)
+        VALUES(2,ayşegül,çağlayan,ayse,12345678910,ayse@gmail.com,12345678910,kadın,21,123456789,öğrenci,2) ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kullanıcılar`(`kullanici_id`, `isim`, `soyisim`, `kullanıcı_Adı`, `tc_kimlik`, `e_mail`, `telefon_numarası`, `cinsiyet`, `yaş`, `şifre`, `müşteri_mesleği`, `bakiye`)
+        VALUES(2,ayşegül,çağlayan,ayse,12345678910,ayse@gmail.com,12345678910,kadın,21,123456789,öğrenci,2) ')
+ 4 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kullanıcılar`(`kullanici_id`, `isim`, `soyisim`, `kullanıcı_Adı`, `tc_kimlik`, `e_mail`, `telefon_numarası`, `cinsiyet`, `yaş`, `şifre`, `müşteri_mesleği`, `bakiye`)
+        VALUES(2,ayşegül,çağlayan,ayse,12345678910,ayse@gmail.com,12345678910,kadın,21,123456789,öğrenci,2) ')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 09:46:19 --> ErrorException: Undefined variable $result
+in APPPATH\Controllers\connection.php on line 15.
+ 1 APPPATH\Controllers\connection.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\connection.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 10:06:05 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kul...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kul...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kul...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO kul...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\connection->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 10:06:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'2\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 10:06:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'2\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'2\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 3 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'2\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 10:06:05 --> [Caused by] mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'2\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'2\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'2\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 4 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'2\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 10:06:26 --> mysqli_sql_exception: Duplicate entry '12345678910' for key 'tc_kimlik_UNIQUE' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kul...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kul...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kul...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO kul...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\connection->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 10:06:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '12345678910' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'3\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 10:06:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '12345678910' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'3\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'3\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 3 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'3\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 10:06:26 --> [Caused by] mysqli_sql_exception: Duplicate entry '12345678910' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'3\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'3\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'3\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 4 APPPATH\Controllers\connection.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'3\', \'ayşegül\', \'çağlayan\',\'ayse\',\'12345678910\',\'ayse@gmail.com\',\'12345678910\',\'kadın\',\'21\',\'123456\',\'öğrenci\',\'2\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 10:08:54 --> ErrorException: Undefined array key "fname"
+in APPPATH\Controllers\connection.php on line 12.
+ 1 APPPATH\Controllers\connection.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fname"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\connection.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 10:29:17 --> mysqli_sql_exception: Duplicate entry '5' for key 'PRIMARY' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kul...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kul...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kul...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\connection.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO kul...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\connection->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 10:29:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '5' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\connection.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'5\', \'deneme2\', \'deneme2\',\'ayse\',\'963258741\',\'deneme2@gmail.com\',\'545-272-2517\',\'kadın\',\'21\',\'123\',\'öğrenci\',\'2\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 10:29:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '5' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'5\', \'deneme2\', \'deneme2\',\'ayse\',\'963258741\',\'deneme2@gmail.com\',\'545-272-2517\',\'kadın\',\'21\',\'123\',\'öğrenci\',\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'5\', \'deneme2\', \'deneme2\',\'ayse\',\'963258741\',\'deneme2@gmail.com\',\'545-272-2517\',\'kadın\',\'21\',\'123\',\'öğrenci\',\'2\')')
+ 3 APPPATH\Controllers\connection.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'5\', \'deneme2\', \'deneme2\',\'ayse\',\'963258741\',\'deneme2@gmail.com\',\'545-272-2517\',\'kadın\',\'21\',\'123\',\'öğrenci\',\'2\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 10:29:17 --> [Caused by] mysqli_sql_exception: Duplicate entry '5' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'5\', \'deneme2\', \'deneme2\',\'ayse\',\'963258741\',\'deneme2@gmail.com\',\'545-272-2517\',\'kadın\',\'21\',\'123\',\'öğrenci\',\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'5\', \'deneme2\', \'deneme2\',\'ayse\',\'963258741\',\'deneme2@gmail.com\',\'545-272-2517\',\'kadın\',\'21\',\'123\',\'öğrenci\',\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'5\', \'deneme2\', \'deneme2\',\'ayse\',\'963258741\',\'deneme2@gmail.com\',\'545-272-2517\',\'kadın\',\'21\',\'123\',\'öğrenci\',\'2\')')
+ 4 APPPATH\Controllers\connection.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'5\', \'deneme2\', \'deneme2\',\'ayse\',\'963258741\',\'deneme2@gmail.com\',\'545-272-2517\',\'kadın\',\'21\',\'123\',\'öğrenci\',\'2\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\connection->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\connection))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 10:56:01 --> Error: Call to undefined function App\Controllers\alert()
+in APPPATH\Controllers\signUp.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\signUp->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 11:03:36 --> mysqli_sql_exception: Duplicate entry '14597565' for key 'tc_kimlik_UNIQUE' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kul...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kul...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kul...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\signUp.php(31): CodeIgniter\Database\BaseConnection->query('INSERT INTO kul...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\signUp->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 11:03:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '14597565' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\signUp.php(31): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sljcn\', \'3ggr3\',\'grg\',\'14597565\',\'caglayana570@gmail.com\',\'545-272-2518\',\'Kadın\',\'12\',\'123\',\'öğrenci\',\'0\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\signUp->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 11:03:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '14597565' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sljcn\', \'3ggr3\',\'grg\',\'14597565\',\'caglayana570@gmail.com\',\'545-272-2518\',\'Kadın\',\'12\',\'123\',\'öğrenci\',\'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sljcn\', \'3ggr3\',\'grg\',\'14597565\',\'caglayana570@gmail.com\',\'545-272-2518\',\'Kadın\',\'12\',\'123\',\'öğrenci\',\'0\')')
+ 3 APPPATH\Controllers\signUp.php(31): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sljcn\', \'3ggr3\',\'grg\',\'14597565\',\'caglayana570@gmail.com\',\'545-272-2518\',\'Kadın\',\'12\',\'123\',\'öğrenci\',\'0\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\signUp->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 11:03:36 --> [Caused by] mysqli_sql_exception: Duplicate entry '14597565' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sljcn\', \'3ggr3\',\'grg\',\'14597565\',\'caglayana570@gmail.com\',\'545-272-2518\',\'Kadın\',\'12\',\'123\',\'öğrenci\',\'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sljcn\', \'3ggr3\',\'grg\',\'14597565\',\'caglayana570@gmail.com\',\'545-272-2518\',\'Kadın\',\'12\',\'123\',\'öğrenci\',\'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sljcn\', \'3ggr3\',\'grg\',\'14597565\',\'caglayana570@gmail.com\',\'545-272-2518\',\'Kadın\',\'12\',\'123\',\'öğrenci\',\'0\')')
+ 4 APPPATH\Controllers\signUp.php(31): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sljcn\', \'3ggr3\',\'grg\',\'14597565\',\'caglayana570@gmail.com\',\'545-272-2518\',\'Kadın\',\'12\',\'123\',\'öğrenci\',\'0\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\signUp->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 11:39:54 --> mysqli_sql_exception: Duplicate entry '78974174474' for key 'tc_kimlik_UNIQUE' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kul...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kul...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kul...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\signUp.php(24): CodeIgniter\Database\BaseConnection->query('INSERT INTO kul...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\signUp->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 11:39:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '78974174474' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\signUp.php(24): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sude\', \'ss\',\'ss\',\'78974174474\',\'aacaglayana57@gmail.com\',\'545-272-2518\',\'Kadın\',\'98\',\'741\',\'öğrenci\',\'0\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\signUp->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 11:39:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '78974174474' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sude\', \'ss\',\'ss\',\'78974174474\',\'aacaglayana57@gmail.com\',\'545-272-2518\',\'Kadın\',\'98\',\'741\',\'öğrenci\',\'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sude\', \'ss\',\'ss\',\'78974174474\',\'aacaglayana57@gmail.com\',\'545-272-2518\',\'Kadın\',\'98\',\'741\',\'öğrenci\',\'0\')')
+ 3 APPPATH\Controllers\signUp.php(24): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sude\', \'ss\',\'ss\',\'78974174474\',\'aacaglayana57@gmail.com\',\'545-272-2518\',\'Kadın\',\'98\',\'741\',\'öğrenci\',\'0\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\signUp->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 11:39:54 --> [Caused by] mysqli_sql_exception: Duplicate entry '78974174474' for key 'tc_kimlik_UNIQUE'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sude\', \'ss\',\'ss\',\'78974174474\',\'aacaglayana57@gmail.com\',\'545-272-2518\',\'Kadın\',\'98\',\'741\',\'öğrenci\',\'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sude\', \'ss\',\'ss\',\'78974174474\',\'aacaglayana57@gmail.com\',\'545-272-2518\',\'Kadın\',\'98\',\'741\',\'öğrenci\',\'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sude\', \'ss\',\'ss\',\'78974174474\',\'aacaglayana57@gmail.com\',\'545-272-2518\',\'Kadın\',\'98\',\'741\',\'öğrenci\',\'0\')')
+ 4 APPPATH\Controllers\signUp.php(24): CodeIgniter\Database\BaseConnection->query('INSERT INTO kullanıcılar (kullanici_id,isim,soyisim,kullanıcı_Adı,tc_kimlik,e_mail,telefon_numarası,cinsiyet,yaş,şifre,müşteri_mesleği,bakiye) 
+        VALUES (\'\', \'sude\', \'ss\',\'ss\',\'78974174474\',\'aacaglayana57@gmail.com\',\'545-272-2518\',\'Kadın\',\'98\',\'741\',\'öğrenci\',\'0\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\signUp->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\signUp))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:21:00 --> ErrorException: Undefined array key "email"
+in APPPATH\Controllers\UserLogin.php on line 10.
+ 1 APPPATH\Controllers\UserLogin.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:21:28 --> ErrorException: Undefined array key "email"
+in APPPATH\Controllers\UserLogin.php on line 10.
+ 1 APPPATH\Controllers\UserLogin.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:22:02 --> ErrorException: Undefined array key "password"
+in APPPATH\Controllers\UserLogin.php on line 11.
+ 1 APPPATH\Controllers\UserLogin.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:23:24 --> TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, CodeIgniter\Database\MySQLi\Result given
+in APPPATH\Controllers\UserLogin.php on line 17.
+ 1 APPPATH\Controllers\UserLogin.php(17): mysqli_num_rows(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:23:59 --> TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, CodeIgniter\Database\MySQLi\Result given
+in APPPATH\Controllers\UserLogin.php on line 17.
+ 1 APPPATH\Controllers\UserLogin.php(17): mysqli_num_rows(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:25:26 --> TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, CodeIgniter\Database\MySQLi\Result given
+in APPPATH\Controllers\UserLogin.php on line 19.
+ 1 APPPATH\Controllers\UserLogin.php(19): mysqli_fetch_assoc(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:34:15 --> ErrorException: Undefined property: stdClass::$password
+in APPPATH\Controllers\UserLogin.php on line 19.
+ 1 APPPATH\Controllers\UserLogin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$password', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 13:48:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com'' at line 1 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 13:48:49 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `kullanıcılar` WHERE e_mail=ayse@gmail.com\'')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:48:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `kullanıcılar` WHERE e_mail=ayse@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `kullanıcılar` WHERE e_mail=ayse@gmail.com\'')
+ 3 APPPATH\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `kullanıcılar` WHERE e_mail=ayse@gmail.com\'')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:48:49 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `kullanıcılar` WHERE e_mail=ayse@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `kullanıcılar` WHERE e_mail=ayse@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `kullanıcılar` WHERE e_mail=ayse@gmail.com\'')
+ 4 APPPATH\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `kullanıcılar` WHERE e_mail=ayse@gmail.com\'')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 13:49:21 --> Error: Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\UserLogin.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserLogin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:03:53 --> ErrorException: Undefined variable $errorMessage
+in APPPATH\Controllers\UserLogin.php on line 115.
+ 1 APPPATH\Controllers\UserLogin.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errorMessage', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 115)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:04:43 --> ErrorException: Undefined variable $errorMessage
+in APPPATH\Controllers\UserLogin.php on line 116.
+ 1 APPPATH\Controllers\UserLogin.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errorMessage', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 116)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:04:47 --> ErrorException: Undefined variable $errorMessage
+in APPPATH\Controllers\UserLogin.php on line 116.
+ 1 APPPATH\Controllers\UserLogin.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errorMessage', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 116)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:05:24 --> ErrorException: Undefined variable $errorMessage
+in APPPATH\Controllers\UserLogin.php on line 111.
+ 1 APPPATH\Controllers\UserLogin.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errorMessage', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 111)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:05:29 --> ErrorException: Undefined variable $errorMessage
+in APPPATH\Controllers\UserLogin.php on line 111.
+ 1 APPPATH\Controllers\UserLogin.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errorMessage', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 111)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:05:32 --> ErrorException: Undefined variable $errorMessage
+in APPPATH\Controllers\UserLogin.php on line 111.
+ 1 APPPATH\Controllers\UserLogin.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errorMessage', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 111)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:07:31 --> ErrorException: Undefined variable $errorMessage
+in APPPATH\Controllers\UserLogin.php on line 108.
+ 1 APPPATH\Controllers\UserLogin.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errorMessage', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 108)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:08:20 --> ErrorException: Undefined variable $errorMessage
+in APPPATH\Controllers\UserLogin.php on line 107.
+ 1 APPPATH\Controllers\UserLogin.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errorMessage', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php', 107)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:11:01 --> ParseError: syntax error, unexpected double-quoted string ">", expecting "," or ";"
+in APPPATH\Controllers\UserLogin.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:11:21 --> ParseError: syntax error, unexpected double-quoted string ">", expecting "," or ";"
+in APPPATH\Controllers\UserLogin.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:17:26 --> ParseError: syntax error, unexpected double-quoted string ");", expecting "," or ";"
+in APPPATH\Controllers\UserLogin.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 14:17:47 --> ParseError: syntax error, unexpected double-quoted string ");", expecting "," or ";"
+in APPPATH\Controllers\UserLogin.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\UserLogin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserLogin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserLogin')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\UserLogin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 21:52:53 --> mysqli_sql_exception: Table 'umuttepe_turizm.şehile' doesn't exist in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO \xC5\x9Fe...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO \xC5\x9Fe...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO \xC5\x9Fe...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO \xC5\x9Fe...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_route->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 21:52:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'umuttepe_turizm.şehile' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehile(sehir_id,şehir_adi) VALUES (\'\', \'Kocaeli\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:52:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'umuttepe_turizm.şehile' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO şehile(sehir_id,şehir_adi) VALUES (\'\', \'Kocaeli\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO şehile(sehir_id,şehir_adi) VALUES (\'\', \'Kocaeli\')')
+ 3 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehile(sehir_id,şehir_adi) VALUES (\'\', \'Kocaeli\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:52:53 --> [Caused by] mysqli_sql_exception: Table 'umuttepe_turizm.şehile' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO şehile(sehir_id,şehir_adi) VALUES (\'\', \'Kocaeli\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO şehile(sehir_id,şehir_adi) VALUES (\'\', \'Kocaeli\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO şehile(sehir_id,şehir_adi) VALUES (\'\', \'Kocaeli\')')
+ 4 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehile(sehir_id,şehir_adi) VALUES (\'\', \'Kocaeli\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 21:53:45 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO \xC5\x9Fe...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO \xC5\x9Fe...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO \xC5\x9Fe...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO \xC5\x9Fe...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_route->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 21:53:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:53:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 3 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:53:45 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 4 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 21:54:31 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO \xC5\x9Fe...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO \xC5\x9Fe...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO \xC5\x9Fe...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO \xC5\x9Fe...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_route->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 21:54:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:54:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 3 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:54:31 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 4 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 21:54:38 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO \xC5\x9Fe...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO \xC5\x9Fe...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO \xC5\x9Fe...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO \xC5\x9Fe...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_route->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 21:54:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:54:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 3 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:54:38 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 4 APPPATH\Controllers\admin_route.php(13): CodeIgniter\Database\BaseConnection->query('INSERT INTO şehiler(sehir_id,şehir_adi) VALUES (\'\', \'Bursa\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_route->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_route))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:57:50 --> ErrorException: Undefined variable $sofor_id
+in APPPATH\Controllers\admin_bus.php on line 49.
+ 1 APPPATH\Controllers\admin_bus.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sofor_id', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\admin_bus.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 21:59:15 --> mysqli_sql_exception: Unknown column 'Osman' in 'field list' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO sof...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO sof...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO sof...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO sof...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 21:59:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:59:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 3 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 21:59:15 --> [Caused by] mysqli_sql_exception: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 4 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 22:00:50 --> mysqli_sql_exception: Unknown column 'Osman' in 'field list' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO sof...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO sof...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO sof...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO sof...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 22:00:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:00:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 3 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:00:50 --> [Caused by] mysqli_sql_exception: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 4 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 22:04:47 --> mysqli_sql_exception: Unknown column 'Osman' in 'field list' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO sof...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO sof...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO sof...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO sof...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 22:04:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:04:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 3 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:04:47 --> [Caused by] mysqli_sql_exception: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 4 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,12345678910,5458521478)')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 22:08:17 --> mysqli_sql_exception: Unknown column 'ali' in 'field list' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO sof...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO sof...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO sof...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO sof...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 22:08:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ali' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', ali ,Ünlü,36119143086,5458521478)')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:08:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ali' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', ali ,Ünlü,36119143086,5458521478)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', ali ,Ünlü,36119143086,5458521478)')
+ 3 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', ali ,Ünlü,36119143086,5458521478)')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:08:17 --> [Caused by] mysqli_sql_exception: Unknown column 'ali' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', ali ,Ünlü,36119143086,5458521478)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', ali ,Ünlü,36119143086,5458521478)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', ali ,Ünlü,36119143086,5458521478)')
+ 4 APPPATH\Controllers\admin_bus.php(48): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', ali ,Ünlü,36119143086,5458521478)')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 22:10:14 --> mysqli_sql_exception: Unknown column 'Osman' in 'field list' in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO sof...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO sof...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO sof...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\admin_bus.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO sof...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-14 22:10:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\admin_bus.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,36119143086,5458521478)')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:10:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,36119143086,5458521478)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,36119143086,5458521478)')
+ 3 APPPATH\Controllers\admin_bus.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,36119143086,5458521478)')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:10:14 --> [Caused by] mysqli_sql_exception: Unknown column 'Osman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,36119143086,5458521478)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,36119143086,5458521478)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,36119143086,5458521478)')
+ 4 APPPATH\Controllers\admin_bus.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO soforler(sofor_id,sofor_isim,sofor_soyisim,sofor_tc,sofor_tel)
+             VALUES (\'\', Osman,Ünlü,36119143086,5458521478)')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 22:28:09 --> ErrorException: Undefined variable $soforrekle
+in APPPATH\Controllers\admin_bus.php on line 51.
+ 1 APPPATH\Controllers\admin_bus.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $soforrekle', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\admin_bus.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin_bus->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin_bus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

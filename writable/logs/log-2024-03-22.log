@@ -1,0 +1,321 @@
+ERROR - 2024-03-22 00:30:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850','424242424242','022025','123')' at line 2 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO \xC3\xB6d...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO \xC3\xB6d...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO \xC3\xB6d...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO \xC3\xB6d...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\card->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-22 00:30:15 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850\',\'424242424242\',\'022025\',\'123\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:30:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850\',\'424242424242\',\'022025\',\'123\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850\',\'424242424242\',\'022025\',\'123\')')
+ 3 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850\',\'424242424242\',\'022025\',\'123\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:30:15 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850\',\'424242424242\',\'022025\',\'123\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850\',\'424242424242\',\'022025\',\'123\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850\',\'424242424242\',\'022025\',\'123\')')
+ 4 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850\',\'424242424242\',\'022025\',\'123\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-22 00:32:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850.00','424242424242','022025','123')' at line 2 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO \xC3\xB6d...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO \xC3\xB6d...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO \xC3\xB6d...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO \xC3\xB6d...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\card->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-22 00:32:14 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850.00','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:32:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850.00','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 3 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:32:14 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850.00','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 4 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-22 00:33:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850.00','424242424242','022025','123')' at line 2 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO \xC3\xB6d...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO \xC3\xB6d...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO \xC3\xB6d...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO \xC3\xB6d...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\card->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-22 00:33:00 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850.00','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:33:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850.00','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 3 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 00:33:00 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES('','6','25','2','mm','850.00','424242424242','022025','123')' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 4 APPPATH\Controllers\card.php(17): CodeIgniter\Database\BaseConnection->query('INSERT INTO ödemeler (ödeme_id,sefer_id,koltuk_id,user_id,kart_adi,odeme_miktari,kredi_karti_numarasi,
+      son_tarih,cvv VALUES(\'\',\'6\',\'25\',\'2\',\'mm\',\'850.00\',\'424242424242\',\'022025\',\'123\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\card->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\card))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:04:18 --> ErrorException: Undefined array key "$indirimOrani"
+in APPPATH\Controllers\info.php on line 200.
+ 1 APPPATH\Controllers\info.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "$indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 200)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:05:22 --> ErrorException: Undefined array key "$indirimOrani"
+in APPPATH\Controllers\info.php on line 9.
+ 1 APPPATH\Controllers\info.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "$indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:11:59 --> ErrorException: include(seat2): Failed to open stream: No such file or directory
+in APPPATH\Controllers\info.php on line 9.
+ 1 APPPATH\Controllers\info.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(seat2): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 9)
+ 2 APPPATH\Controllers\info.php(9): include()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:12:32 --> ErrorException: Undefined variable $indirimOrani
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $indirimOrani', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:13:03 --> ErrorException: Undefined array key "$indirimOrani"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "$indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:13:31 --> ErrorException: Undefined array key "$indirimOrani"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "$indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:16:18 --> ErrorException: Undefined array key "$indirimOrani"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "$indirimOrani"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:22:25 --> ErrorException: Undefined array key "name"
+in APPPATH\Controllers\info.php on line 10.
+ 1 APPPATH\Controllers\info.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:31:26 --> ErrorException: Undefined variable $color
+in APPPATH\Controllers\info.php on line 11.
+ 1 APPPATH\Controllers\info.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:32:03 --> ErrorException: Undefined variable $color
+in APPPATH\Controllers\info.php on line 190.
+ 1 APPPATH\Controllers\info.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 190)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:47:22 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 195.
+ 1 APPPATH\Controllers\seat.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 195)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:47:23 --> ErrorException: Undefined array key "gidis"
+in APPPATH\Controllers\seat2.php on line 19.
+ 1 APPPATH\Controllers\seat2.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:47:51 --> ErrorException: Undefined array key "gidis"
+in APPPATH\Controllers\seat2.php on line 19.
+ 1 APPPATH\Controllers\seat2.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:47:59 --> ErrorException: Undefined array key "gidis"
+in APPPATH\Controllers\seat2.php on line 19.
+ 1 APPPATH\Controllers\seat2.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:48:31 --> ErrorException: Undefined array key "gidis"
+in APPPATH\Controllers\seat2.php on line 20.
+ 1 APPPATH\Controllers\seat2.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:49:34 --> ErrorException: Undefined array key "isim"
+in APPPATH\Controllers\info.php on line 13.
+ 1 APPPATH\Controllers\info.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isim"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:50:30 --> ErrorException: ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\xampp\\htdocs\\yazlab3\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\xampp\\htdocs\\yazlab3\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(686): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(982): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(1068): session()
+10 SYSTEMPATH\CodeIgniter.php(549): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:51:01 --> ErrorException: Undefined array key "isim"
+in APPPATH\Controllers\info.php on line 13.
+ 1 APPPATH\Controllers\info.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isim"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\info->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\info))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:52:59 --> ErrorException: Undefined variable $user_id
+in APPPATH\Controllers\seat2.php on line 68.
+ 1 APPPATH\Controllers\seat2.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:55:48 --> ErrorException: Undefined variable $isim
+in APPPATH\Controllers\info.php on line 196.
+ 1 APPPATH\Controllers\info.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isim', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 196)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:58:43 --> ErrorException: Undefined variable $indirimOrani
+in APPPATH\Controllers\info.php on line 196.
+ 1 APPPATH\Controllers\info.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $indirimOrani', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 196)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-22 23:59:42 --> ErrorException: Undefined variable $indirimOrani
+in APPPATH\Controllers\info.php on line 16.
+ 1 APPPATH\Controllers\info.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $indirimOrani', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php', 16)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\info.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\info')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\info')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\info', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

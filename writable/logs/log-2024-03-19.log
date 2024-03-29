@@ -1,0 +1,475 @@
+CRITICAL - 2024-03-19 11:18:43 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 12.
+ 1 APPPATH\Controllers\seat.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:31:00 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\Ticketpage.php on line 102.
+ 1 APPPATH\Controllers\Ticketpage.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 102)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:31:12 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\Ticketpage.php on line 102.
+ 1 APPPATH\Controllers\Ticketpage.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 102)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:38:19 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\Ticketpage.php on line 102.
+ 1 APPPATH\Controllers\Ticketpage.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 102)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:44:04 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 12.
+ 1 APPPATH\Controllers\seat.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:44:55 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 12.
+ 1 APPPATH\Controllers\seat.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:48:13 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 12.
+ 1 APPPATH\Controllers\seat.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:48:42 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 12.
+ 1 APPPATH\Controllers\seat.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 11:55:51 --> ErrorException: Undefined array key "city"
+in APPPATH\Controllers\Ticketpage.php on line 103.
+ 1 APPPATH\Controllers\Ticketpage.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 103)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Ticketpage')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Ticketpage')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Ticketpage', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:06:03 --> ErrorException: Undefined variable $db
+in APPPATH\Controllers\Ticketpage.php on line 18.
+ 1 APPPATH\Controllers\Ticketpage.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\Ticketpage.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Ticketpage->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ticketpage))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:08:35 --> ErrorException: Undefined variable $gidis_tarihi
+in APPPATH\Controllers\seat.php on line 29.
+ 1 APPPATH\Controllers\seat.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidis_tarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:09:38 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 12.
+ 1 APPPATH\Controllers\seat.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:09:38 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 12.
+ 1 APPPATH\Controllers\seat.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:13:33 --> ErrorException: Undefined variable $gidisTarihi
+in APPPATH\Controllers\seat.php on line 35.
+ 1 APPPATH\Controllers\seat.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidisTarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:18:14 --> ErrorException: Undefined variable $gidisTarihi
+in APPPATH\Controllers\seat.php on line 32.
+ 1 APPPATH\Controllers\seat.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidisTarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:22:57 --> ErrorException: Undefined variable $gidisTarihi
+in APPPATH\Controllers\seat.php on line 35.
+ 1 APPPATH\Controllers\seat.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidisTarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-19 12:24:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat.php(41): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-19 12:24:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat.php(41): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =\'')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:24:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `seferler` WHERE kalkis_saati =\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `seferler` WHERE kalkis_saati =\'')
+ 3 APPPATH\Controllers\seat.php(41): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =\'')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:24:58 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `seferler` WHERE kalkis_saati =\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `seferler` WHERE kalkis_saati =\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `seferler` WHERE kalkis_saati =\'')
+ 4 APPPATH\Controllers\seat.php(41): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =\'')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:26:48 --> ErrorException: Undefined variable $gidisTarihi
+in APPPATH\Controllers\seat.php on line 37.
+ 1 APPPATH\Controllers\seat.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidisTarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:35:01 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 195.
+ 1 APPPATH\Controllers\seat.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 195)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:36:09 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 195.
+ 1 APPPATH\Controllers\seat.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 195)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:36:09 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 195.
+ 1 APPPATH\Controllers\seat.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 195)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:37:20 --> ErrorException: Undefined variable $db
+in APPPATH\Controllers\seat.php on line 200.
+ 1 APPPATH\Controllers\seat.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 200)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-19 12:37:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat.php(205): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\yazlab3\system\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yazlab3\system\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yazlab3\system\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#8 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(899): class_exists('\\App\\Controller...', true)
+#9 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+#10 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-19 12:37:44 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat.php(205): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =07.00\'')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:37:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `seferler` WHERE kalkis_saati =07.00\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `seferler` WHERE kalkis_saati =07.00\'')
+ 3 APPPATH\Controllers\seat.php(205): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =07.00\'')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 8 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 9 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:37:44 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `seferler` WHERE kalkis_saati =07.00\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `seferler` WHERE kalkis_saati =07.00\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `seferler` WHERE kalkis_saati =07.00\'')
+ 4 APPPATH\Controllers\seat.php(205): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =07.00\'')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 7 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 8 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 9 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+10 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-19 12:38:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1 in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat.php(205): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\yazlab3\system\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yazlab3\system\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yazlab3\system\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#8 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(899): class_exists('\\App\\Controller...', true)
+#9 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+#10 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-03-19 12:38:17 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat.php(205): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =15.00\'')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:38:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `seferler` WHERE kalkis_saati =15.00\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `seferler` WHERE kalkis_saati =15.00\'')
+ 3 APPPATH\Controllers\seat.php(205): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =15.00\'')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 8 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 9 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:38:17 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM `seferler` WHERE kalkis_saati =15.00\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `seferler` WHERE kalkis_saati =15.00\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `seferler` WHERE kalkis_saati =15.00\'')
+ 4 APPPATH\Controllers\seat.php(205): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `seferler` WHERE kalkis_saati =15.00\'')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 7 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 8 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 9 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+10 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:46:19 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 196.
+ 1 APPPATH\Controllers\seat.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 196)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:47:03 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 196.
+ 1 APPPATH\Controllers\seat.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 196)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:48:49 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 184.
+ 1 APPPATH\Controllers\seat.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 184)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 12:49:32 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 184.
+ 1 APPPATH\Controllers\seat.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 184)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:15:33 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 178.
+ 1 APPPATH\Controllers\seat.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 178)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:15:33 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat.php on line 178.
+ 1 APPPATH\Controllers\seat.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 178)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 6 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:21:10 --> ErrorException: Undefined variable $user_id
+in APPPATH\Controllers\seat2.php on line 17.
+ 1 APPPATH\Controllers\seat2.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:21:24 --> ErrorException: Undefined variable $koltukno
+in APPPATH\Controllers\seat2.php on line 17.
+ 1 APPPATH\Controllers\seat2.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $koltukno', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-19 13:22:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`koltuklar`, CONSTRAINT `sefer_koltu_fk1` FOREIGN KEY (`sefer_id`) REFERENCES `seferler` (`sefer_id`)) in C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\yazlab3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO kol...', 0)
+#1 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO kol...')
+#2 C:\xampp\htdocs\yazlab3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO kol...')
+#3 C:\xampp\htdocs\yazlab3\app\Controllers\seat2.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO kol...')
+#4 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(941): App\Controllers\seat2->index()
+#5 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+#6 C:\xampp\htdocs\yazlab3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\yazlab3\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-19 13:22:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`koltuklar`, CONSTRAINT `sefer_koltu_fk1` FOREIGN KEY (`sefer_id`) REFERENCES `seferler` (`sefer_id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\seat2.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'10\',\'2\',\'rezerve\',\'15\',\'0\')')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:22:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`koltuklar`, CONSTRAINT `sefer_koltu_fk1` FOREIGN KEY (`sefer_id`) REFERENCES `seferler` (`sefer_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'10\',\'2\',\'rezerve\',\'15\',\'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'10\',\'2\',\'rezerve\',\'15\',\'0\')')
+ 3 APPPATH\Controllers\seat2.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'10\',\'2\',\'rezerve\',\'15\',\'0\')')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:22:26 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`umuttepe_turizm`.`koltuklar`, CONSTRAINT `sefer_koltu_fk1` FOREIGN KEY (`sefer_id`) REFERENCES `seferler` (`sefer_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'10\',\'2\',\'rezerve\',\'15\',\'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'10\',\'2\',\'rezerve\',\'15\',\'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'10\',\'2\',\'rezerve\',\'15\',\'0\')')
+ 4 APPPATH\Controllers\seat2.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO koltuklar (koltuk_id,sefer_id,user_id,koltuk_durum,koltukNumarasi,indirim_orani) VALUES
+       (\'\',\'10\',\'2\',\'rezerve\',\'15\',\'0\')')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:24:07 --> ErrorException: Undefined variable $koltukno
+in APPPATH\Controllers\seat2.php on line 17.
+ 1 APPPATH\Controllers\seat2.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $koltukno', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:39:53 --> ErrorException: Undefined array key "gidis-tarihi"
+in APPPATH\Controllers\seat2.php on line 15.
+ 1 APPPATH\Controllers\seat2.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gidis-tarihi"', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:50:19 --> ErrorException: Undefined variable $gidisTarihi
+in APPPATH\Controllers\seat2.php on line 24.
+ 1 APPPATH\Controllers\seat2.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidisTarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 13:51:28 --> ErrorException: Undefined variable $gidisTarihi
+in APPPATH\Controllers\seat2.php on line 25.
+ 1 APPPATH\Controllers\seat2.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidisTarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat2.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat2->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat2))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

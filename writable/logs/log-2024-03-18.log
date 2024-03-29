@@ -1,0 +1,41 @@
+CRITICAL - 2024-03-18 23:02:34 --> ParseError: syntax error, unexpected variable "$rezervasyonekle"
+in APPPATH\Controllers\seat.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\seat')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\seat')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\seat', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 23:41:13 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\seat.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 23:41:43 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\seat.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 23:42:01 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\seat.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 23:52:57 --> ErrorException: Undefined variable $gidis_tarihi
+in APPPATH\Controllers\seat.php on line 32.
+ 1 APPPATH\Controllers\seat.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidis_tarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-18 23:58:03 --> ErrorException: Undefined variable $gidis_tarihi
+in APPPATH\Controllers\seat.php on line 40.
+ 1 APPPATH\Controllers\seat.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gidis_tarihi', 'C:\\xampp\\htdocs\\yazlab3\\app\\Controllers\\seat.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\seat->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\seat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
