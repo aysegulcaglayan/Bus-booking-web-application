@@ -23,7 +23,7 @@ Bu proje, PHP yazılım dili ile geliştirilmiş bir hayali turizm acentesi web 
 ### Giriş Paneli
 Bu sayfa web sitesinin giriş sayfasıdır. Bu sayfada Kullanıcı girişi ve admin girşleri için iki farklı sekme bizi karşılamaktadır.
 
-![Ana Sayfa](https://github.com/AliEmirTuran/Lesson-Program-Project-with-Graph-Coloring/assets/89272211/976d78d1-832e-4355-b931-ed8a1631b0fd)
+![1](https://github.com/aysegulcaglayan/bus-booking-web-application/assets/89272211/3bdc95db-050f-4146-8aab-11322e92e891)
 
 ### Müşteri Giriş Paneli
 Bu sayfa web sitesinin müşteri giriş sayfasını içermektedir.Bu sayfada vertabanından kullanıcı bilgi kontrolü yapılmaktadır.
