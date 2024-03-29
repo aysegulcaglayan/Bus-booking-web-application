@@ -123,4 +123,14 @@ Admin Paneli üzerinden sefer oluşturma ,otobüs ekleme ,yolcu bilgileri ve öd
 ## Veritabanı Tasarımı
 MySQL üzerinde tasarladığımız ilişkisel veritabanında normalizasyon kurallarına dikkat ederek oluşturduğumuz tablolar ile çeşitli verileri tablolarımızda tuttuk.Veritabanının projeye entegrasyonu aşamasında WAMP Server kullanılmıştır.
 
-![Veritabanı](https://github.com/AliEmirTuran/Lesson-Program-Project-with-Graph-Coloring/assets/89272211/23d63489-5243-4630-b47f-7dcf43f0c96d)
+![umuttepeturizmeerdiagram](https://github.com/aysegulcaglayan/bus-booking-web-application/assets/89272211/b7dcf260-b2db-41a3-9b01-dc3b04b1c134)
+
+
+
+
+## İşlem Şeması
+Sayfanın genel çerçevesi itibari ile işlem şeması aşağıdaki görseldeki gibidir:
+
+![İşlemŞeması](https://github.com/aysegulcaglayan/bus-booking-web-application/assets/89272211/9bb95b57-e987-41cc-826b-44b26175fa67)
+
+
